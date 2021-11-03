@@ -1,0 +1,26 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+</style>
+<body>
+<h1>Totales de datos de coronavirus a nivel mundial</h1>
+<div class="cards">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div class="example-header-image" mat-card-avatar></div>
+      <mat-card-title>Estadisticas Mundiales</mat-card-title>
+      <mat-card-subtitle>coronavirus</mat-card-subtitle>
+    </mat-card-header>
+    <img height="300px" mat-card-image src="assets/img/mundial.jpg" width="150px">
+    <mat-card-content>
+      <p> casos confirmados :{{listTotal.confirmed}}</p>
+      <p> total de fallecidos :{{listTotal.deaths}}</p>
+      <p> total recuperados :{{listTotal.recovered}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button color="warn" mat-button>SUSCRIPCIÓN</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+</body>
+
+

@@ -1,0 +1,102 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+</style>
+<mat-toolbar>
+  <button (click)="sidenav.toggle()" *ngIf="sidenav.mode==='over'" mat-icon-button>
+    <mat-icon *ngIf="!sidenav.opened">
+      menu
+    </mat-icon>
+    <mat-icon *ngIf="sidenav.opened">
+      close
+    </mat-icon>
+  </button>
+  ESTADISTICAS COVID
+</mat-toolbar>
+
+
+<mat-sidenav-container mat-elevation-z0>
+  <mat-sidenav #sidenav="matSidenav">
+    <mat-expansion-panel (closed)="panelOpenState = false"
+                         (opened)="panelOpenState = true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Centroamérica
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <button class="menu-botton" mat-button>
+        <mat-icon>
+          edit_location
+        </mat-icon>
+        <span routerLink="/dashboard">
+        Mundo
+      </span>
+      </button>
+      <button class="menu-botton" mat-button>
+        <mat-icon>
+          edit_location
+        </mat-icon>
+        <span routerLink="/centroAmerica">
+        Belice
+      </span>
+      </button>
+      <button class="menu-botton" mat-button>
+        <mat-icon>
+          edit_location
+        </mat-icon>
+        <span routerLink="/gt">
+        Guatemala
+      </span>
+      </button>
+      <button class="menu-botton" mat-button>
+        <mat-icon>
+          edit_location
+        </mat-icon>
+        <span routerLink="/sv">
+        El Salvador
+      </span>
+      </button>
+      <button class="menu-botton" mat-button>
+        <mat-icon>
+          edit_location
+        </mat-icon>
+        <span routerLink="/hd">
+        Honduras
+      </span>
+      </button>
+      <button class="menu-botton" mat-button>
+        <mat-icon>
+          edit_location
+        </mat-icon>
+        <span routerLink="/nc">
+        Nicaragua
+      </span>
+      </button>
+      <button class="menu-botton" mat-button>
+        <mat-icon>
+          edit_location
+        </mat-icon>
+        <span routerLink="/cs">
+        Costa Rica
+      </span>
+      </button>
+      <button class="menu-botton" mat-button>
+        <mat-icon>
+          edit_location
+        </mat-icon>
+        <span routerLink="/pn">
+        Panamá
+      </span>
+      </button>
+    </mat-expansion-panel>
+    <br>
+
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+

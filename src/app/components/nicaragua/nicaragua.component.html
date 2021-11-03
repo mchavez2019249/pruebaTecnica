@@ -1,0 +1,25 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+</style>
+<body>
+<h1>Totales de datos de coronavirus en Nicaragua</h1>
+<div class="cards">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div class="example-header-image" mat-card-avatar></div>
+      <mat-card-title>Estadisticas en Nicaragua</mat-card-title>
+      <mat-card-subtitle>coronavirus</mat-card-subtitle>
+    </mat-card-header>
+    <img height="300px" mat-card-image src="assets/img/nicaragua.jpg" width="150px">
+    <mat-card-content *ngFor="let valor of listTotal">
+      <p> casos confirmados :{{valor.confirmed}}</p>
+      <p> total de fallecidos :{{valor.deaths}}</p>
+      <p> total recuperados :{{valor.recovered}}</p>
+      <p> ultima actualización: {{valor.lastupdate}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button color="warn" mat-button>SUSCRIPCIÓN</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+</body>

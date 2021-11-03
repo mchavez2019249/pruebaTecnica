@@ -1,0 +1,16 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url("/assets/img/covid-test.png");
+  background-size: cover;
+}
+
+.example-card{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+h1{
+  font-family: 'Didact Gothic', sans-serif;
+}
